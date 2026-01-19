@@ -1,8 +1,6 @@
 import ColumnMarker from './ColumnMarker.tsx'
 import './Table.scss'
 
-// date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes()
-
 export default function Table() { 
     return (
       <>
