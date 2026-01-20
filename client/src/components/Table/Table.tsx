@@ -1,5 +1,16 @@
 import ColumnMarker from './ColumnMarker.tsx'
 import './Table.scss'
+import AddPopupComponent from './AddPopUpComponent.tsx'
+
+//TODO: доделат попап с блюром блэкджеком и шлюхами
+function AddPopup(){
+  return (
+    <>
+      <AddPopupComponent />
+    </>
+  )
+}
+
 
 export default function Table() { 
     return (
@@ -8,7 +19,9 @@ export default function Table() {
             <col/>
             <ColumnMarker />
             <tr>
-              <td></td>
+              <td className='add-cell'>
+                <button onClick={AddPopup} className='add-button'>+</button>
+              </td>
               <td>Monday</td>
               <td>Tuesday</td>
               <td>Wednsday</td>

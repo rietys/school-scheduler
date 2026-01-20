@@ -1,11 +1,11 @@
-import './App.css'
-import Table from './components/Table'
+import './App.scss'
+import Table from './components/Table/Table'
 
 export default function App() {
   return (
     <>
       <header>
-        <button>Войти</button>
+        <button className='login-button'>Войти</button>
       </header>
       <main>
         <Table />

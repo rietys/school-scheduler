@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+  }
+
+.popup-pad {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background: #462c4b98;
+    align-content: center;
+    justify-items: center;
+}   
+
+.popup {
+    border-radius: 30px;
+    height: 400px;
+    width: 300px;
+    background: #d5cdd6;
+    align-content: center;
+    justify-items: center;
+}   
+
+.exit-button {
+    position: absolute;
+    margin: 10px;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+}
