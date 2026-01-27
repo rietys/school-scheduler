@@ -5,46 +5,67 @@
   font-weight: 600;
 }
 
-/* 
-#root {
-  
-} */
-
-header {
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 75px;
-  place-content: center;
+body {
   place-items: center;
-  background: #525252
+  padding-top: 1vh;
+}
+
+// header {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-bottom: 20px;
+//   height: 75px;
+//   align-content: center;
+//   justify-items: center;
+//   background: linear-gradient(90deg, #00dfae, #00caee);
+// }
+
+.students-buttons {
+  margin-left: auto;
+  margin-bottom: 1vh;
+}
+
+// .add-student-button{
+//   &:hover {
+//     border: 1px solid #0059ff;  
+//   }
+
+//   margin-left: 10px;
+//   margin-right: 10px;
+//   border: none;
+//   cursor: pointer;
+//   border-radius: 10px;
+//   display: inline;
+//   height: 50px;
+//   width: 50px;
+//   background-color: #6f9adb;
+//   background-image: url('../public/person-plus.svg');
+//   background-size: 45px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+.all-students-button{
+  &:hover {
+    border: 1px solid #0059ff;  
+  }
+
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #0059ff00;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline;
+  height: 50px;
+  width: 50px;
+  background-color: #6f9adb;
+  background-image: url('./assets/people.svg');
+  background-size: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main {
-  /* align-content: center;
-  justify-items: center; */
-  // place-content: center;
   place-items: center;
-  height: calc(100vh - 75px);
-}
-
-.login-button {
-
-  &:hover {
-    border: 1px solid #ffffff;  
-  }
-
-  &:active {
-    background: #016ad3;
-  }
-
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 800;
-  border-radius: 20px;
-  justify-self: end;
-  display: block;
-  background: #0073E6;
-  height: 50px;
-  width: 100px;
+  max-width: 1300px;
 }

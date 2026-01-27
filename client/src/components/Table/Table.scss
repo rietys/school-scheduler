@@ -4,47 +4,56 @@
 }
 
 
-  table {
-    border-collapse: collapse;
-    border: none;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
-  
-  td {
-    border-bottom: 1px solid #3a85cf;
-    border-top: 1px solid #3a85cf;
-    height: 50px;
-    width: 120px;
-    text-align: center;
-  }
-  
-  .today-column {
-    border: 1px solid #3a85cf;
-    background-color: #00b7ff;
+table {
+  border-collapse: collapse;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+ 
+.test {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #57e0a0;
+  height: 50px;
+  width: 50px;
+}
+
+td {
+  border-bottom: 1px solid #3a85cf;
+  border-top: 1px solid #3a85cf;
+  height: 55px;
+  width: 170px;
+  text-align: center;
+}
+ 
+.today-column {
+  border: 1px solid #3a85cf;
+  background-color: #00b7ff;
+}
+
+.regular-column {
+  border: 1px solid #3a85cf;
+  background-color: #016ad3;
+}
+
+.add-cell {
+  border: none;
+}
+
+.add-button {
+
+  &:active {
+    font-size: 30px;
   }
 
-  .regular-column {
-    border: 1px solid #3a85cf;
-    background-color: #016ad3;
-  }
-
-  .add-cell {
-    border: none;
-  }
-
-  .add-button {
-
-    &:active {
-      font-size: 30px;
-    }
-
-    transition: 200ms;
-    font-size: 50px;
-    font-weight: 100;
-    height: 50px;
-    width: 120px;
-    background: none;
-    border-radius: none;
-    border: none;
-  }
+  transition: 200ms;
+  font-size: 50px;
+  font-weight: 100;
+  height: 50px;
+  width: 120px;
+  background: none;
+  border-radius: none;
+  border: none;
+}

@@ -6,14 +6,14 @@ export default function ColumnMarker() {
   const weekDays: string[] = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
   const columnStyles: string[] = weekDays.map((weekDay) =>
-    today == weekDay ? 'today-column' : 'regular-column'
+    today === weekDay ? 'today-column' : 'regular-column'
   )
 
   return (
     <>
       {columnStyles.map(columnStyle => (
         <col className={columnStyle} />
-      ))} 
+      ))}  
     </>
   )
 }

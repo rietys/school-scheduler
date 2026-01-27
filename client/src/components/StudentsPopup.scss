@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+  }
+
+.popup-pad {
+    opacity: 0;
+    animation: ani 0.2s forwards;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background: #ffffff00;
+    align-content: center;
+    justify-items: center;
+}   
+
+.popup {
+    border-radius: 30px;
+    height: 80vh;
+    width: 80vw;
+    padding-top: 1rem;
+    background: #ced3df;
+    overflow: auto;
+}   
+
+.student-name {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.student-block {
+    align-content: center;
+    display: block;
+    height: 10%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #3f3f3f;
+    cursor: default;
+
+    
+    &:hover{
+        background-color: #4e4e4e;
+    }
+}
+
+.exit-button {
+    background-image: url('');
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }

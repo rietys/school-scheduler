@@ -5,32 +5,34 @@
     font-weight: 600;
   }
 
-.popup-pad {
+.event-popup-pad {
+    opacity: 0;
+    animation: ani 0.2s forwards;
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
     backdrop-filter: blur(2px);
-    background: #462c4b98;
+    background: #4c80aa98;
     align-content: center;
     justify-items: center;
 }   
 
-.popup {
+.event-popup {
     border-radius: 30px;
     height: 400px;
     width: 300px;
     background: #d5cdd6;
-    align-content: center;
-    justify-items: center;
 }   
 
 .exit-button {
-    position: absolute;
-    margin: 10px;
-    top: 0px;
-    right: 0px;
+    margin-left: 100%;
     background: none;
     border: none;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
