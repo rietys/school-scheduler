@@ -3,6 +3,8 @@ import './Table.scss'
 import ColumnMarker from './ColumnMarker.tsx'
 import EventPopup from './EventPopup.tsx'
 
+// TODO: drag'n'drop testblocks
+
 export default function Table() { 
 
   const [popupIsopen, setPopupIsopen] = useState<boolean>(false);
@@ -14,6 +16,8 @@ export default function Table() {
   const ClosePopup = () => {
     setPopupIsopen(false);
   };
+
+  // function handleDragEnd(event: DragEndEvent)
 
   return (
     <>

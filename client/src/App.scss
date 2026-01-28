@@ -10,42 +10,12 @@ body {
   padding-top: 1vh;
 }
 
-// header {
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   margin-bottom: 20px;
-//   height: 75px;
-//   align-content: center;
-//   justify-items: center;
-//   background: linear-gradient(90deg, #00dfae, #00caee);
-// }
-
 .students-buttons {
   margin-left: auto;
   margin-bottom: 1vh;
 }
 
-// .add-student-button{
-//   &:hover {
-//     border: 1px solid #0059ff;  
-//   }
-
-//   margin-left: 10px;
-//   margin-right: 10px;
-//   border: none;
-//   cursor: pointer;
-//   border-radius: 10px;
-//   display: inline;
-//   height: 50px;
-//   width: 50px;
-//   background-color: #6f9adb;
-//   background-image: url('../public/person-plus.svg');
-//   background-size: 45px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
-.all-students-button{
+.students-button{
   &:hover {
     border: 1px solid #0059ff;  
   }
@@ -61,6 +31,26 @@ body {
   background-color: #6f9adb;
   background-image: url('./assets/people.svg');
   background-size: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.teachers-button{
+  &:hover {
+    border: 1px solid #0059ff;  
+  }
+
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #0059ff00;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline;
+  height: 50px;
+  width: 50px;
+  background-color: #6f9adb;
+  background-image: url('./assets/teacher.svg');
+  background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
 }
