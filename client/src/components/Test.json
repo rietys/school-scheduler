@@ -225,18 +225,21 @@
     {
       "id": 1,
       "student_id": 4,
+      "student_name": "София",
       "teacher_id": 2,
       "started_at": "2026-01-28T17:16:00Z"
     },
     {
       "id": 2,
       "student_id": 18,
+      "student_name": "Арина",
       "teacher_id": 1,
       "started_at": "2026-01-27T17:12:00Z"
     },
     {
-      "id": 1,
+      "id": 3,
       "student_id": 10,
+      "student_name": "Волкова",
       "teacher_id": 2,
       "started_at": "2026-01-27T17:20:00Z"
     }

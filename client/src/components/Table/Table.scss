@@ -15,9 +15,16 @@ table {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background-color: #57e0a0;
+  background-color: #6798d8;
+  border: 1px solid #6798d8;
   height: 50px;
   width: 50px;
+  border: none;
+  
+  &:hover {
+    border: 1px solid #b9d7ff;
+    cursor: pointer;
+  }
 }
 
 td {
@@ -46,6 +53,10 @@ td {
 
   &:active {
     font-size: 30px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
   transition: 200ms;

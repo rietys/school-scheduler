@@ -2,22 +2,28 @@ import { useState } from 'react';
 import './Table.scss'
 import ColumnMarker from './ColumnMarker.tsx'
 import EventPopup from './EventPopup.tsx'
+import LessonPopup from './LessonPopup.tsx';
+// import Data from '../Test.json'
+// import type { DragEndEvent } from '@dnd-kit/core';
 
-// TODO: drag'n'drop testblocks
+// TODO: put data to lesson blocks
+
 
 export default function Table() { 
 
-  const [popupIsopen, setPopupIsopen] = useState<boolean>(false);
+  const [addPopupIsopen, setAddPopupIsopen] = useState<boolean>(false);
   
-  function ChangePopup(){
-    setPopupIsopen(!popupIsopen);
-  };
-  
-  const ClosePopup = () => {
-    setPopupIsopen(false);
+  function ChangeAddPopup(){
+    setAddPopupIsopen(!addPopupIsopen);
   };
 
-  // function handleDragEnd(event: DragEndEvent)
+  const ClosePopup = () => {
+    setAddPopupIsopen(false);
+  };
+
+  // function handleDragEnd(event: DragEndEvent){
+
+  // }
 
   return (
     <>
@@ -25,7 +31,7 @@ export default function Table() {
           <col/>
           <ColumnMarker />
           <tr>
-            <td className='add-cell'><button onClick={ChangePopup} className='add-button'>+</button></td>
+            <td className='add-cell'><button onClick={ChangeAddPopup} className='add-button'>+</button></td>
             <td>Mon</td>
             <td>Tue</td>
             <td>Wed</td>
@@ -37,9 +43,7 @@ export default function Table() {
           <tr>
             <td>10:00</td>
             <td>
-              <div className='test'>
-                test block
-              </div>
+              <LessonPopup id={0}/>
             </td>
             <td></td>
             <td></td>
@@ -102,78 +106,8 @@ export default function Table() {
             <td></td>
             <td></td>
           </tr>
-          <tr>
-            <td>16:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>17:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>18:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>19:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>20:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>21:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>22:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
       </table>
-      {popupIsopen && <EventPopup onClose={ClosePopup}/>}
+      {addPopupIsopen && <EventPopup onClose={ClosePopup}/>}
     </>
   )
 }

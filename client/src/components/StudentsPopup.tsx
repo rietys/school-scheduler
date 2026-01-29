@@ -1,5 +1,5 @@
 import './StudentsPopup.scss'
-import Data from '../Test.json'
+import Data from './Test.json'
 
 interface StudentsPopupProps {
   onClose: () => void;
