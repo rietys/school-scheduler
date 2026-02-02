@@ -3,14 +3,14 @@ import './Table.scss'
 import ColumnMarker from './ColumnMarker.tsx'
 import EventPopup from './EventPopup.tsx'
 import LessonPopup from './LessonPopup.tsx';
-// import Data from '../Test.json'
-// import type { DragEndEvent } from '@dnd-kit/core';
 
-// TODO: put data to lesson blocks
+import tableData from '../TestTable.json'
+
 
 
 export default function Table() { 
 
+  const tableBody: { lesson_id: string}[][] = tableData.table_rows_elements;
   const [addPopupIsopen, setAddPopupIsopen] = useState<boolean>(false);
   
   function ChangeAddPopup(){
@@ -21,13 +21,9 @@ export default function Table() {
     setAddPopupIsopen(false);
   };
 
-  // function handleDragEnd(event: DragEndEvent){
-
-  // }
-
   return (
     <>
-      <table> 
+      {/* <table> 
           <col/>
           <ColumnMarker />
           <tr>
@@ -106,6 +102,40 @@ export default function Table() {
             <td></td>
             <td></td>
           </tr>
+      </table>
+      {addPopupIsopen && <EventPopup onClose={ClosePopup}/>} */}
+      <table>
+        <colgroup>
+          <col/>
+          <ColumnMarker />
+        </colgroup>
+        
+        <thead>
+          <tr>
+            <td className='add-cell'><button onClick={ChangeAddPopup} className='add-button'>+</button></td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td>Sat</td>
+            <td>Sun</td>
+          </tr>
+        </thead>
+        
+        <tbody>
+          {
+            tableBody.map((row) =>
+              <tr>
+                <td></td>
+                {row.map((element) =>  element.lesson_id === "" 
+                ? <td></td> 
+                : <td><LessonPopup id={parseInt(element.lesson_id)}/></td>
+                )}
+              </tr>
+            )
+          }
+        </tbody>
       </table>
       {addPopupIsopen && <EventPopup onClose={ClosePopup}/>}
     </>

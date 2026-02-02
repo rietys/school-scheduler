@@ -1,0 +1,67 @@
+{
+    "table_rows_elements": [
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": "1"},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": "2"}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": "3"},
+            {"lesson_id": ""}
+        ],
+        [
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""},
+            {"lesson_id": ""}
+        ]
+    ]
+}

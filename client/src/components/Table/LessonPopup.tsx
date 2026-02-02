@@ -10,18 +10,23 @@ export default function LessonPopup({id}: {id: number}) {
         setPopedup(!popedup);
     }
 
-    console.log(Data.lessons[id])
+    const studentId: number = Data.lessons[id].student_id
+    console.log(id)
 
     return (
         <>
             {!popedup &&
                 <button onClick={ChangePopup}className='popeddown'>
-                    {Data.lessons[id].student_name}
+                    {Data.students[studentId].first_name}
+                    <br></br>
+                    {Data.students[studentId].last_name}
                 </button>
             }
             {popedup &&
                 <button onClick={ChangePopup}className='popedup'>
-                    {Data.lessons[id].student_name}
+                    {Data.students[studentId].first_name}
+                    <br></br>
+                    {Data.students[studentId].last_name}
                 </button>
             }
         </>
